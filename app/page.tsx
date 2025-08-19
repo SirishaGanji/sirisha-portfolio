@@ -23,50 +23,51 @@ interface Project {
 
 const projectsData: Project[] = [
   {
-    id: "network-security-audit",
-    title: "Enterprise Network Security Audit",
+    id: "threat-log-analyzer",
+    title: "Threat Log Analyzer (AI‑Powered Tagging)",
     summary:
-      "Comprehensive security assessment of enterprise network infrastructure identifying vulnerabilities and implementing remediation strategies.",
-    role: "Lead Cybersecurity Analyst",
-    dates: "2024-01-15 to 2024-03-30",
+      "Python tool that classifies security logs using lightweight AI tagging to surface potential threats and patterns.",
+    role: "Cybersecurity Engineer",
+    dates: "2024-05-01 to 2024-07-30",
     category: "Cybersecurity",
-    tags: ["Network Security", "Vulnerability Assessment", "Penetration Testing", "Risk Analysis"],
-    tech: ["Nmap", "Wireshark", "Metasploit", "Nessus", "Python"],
-    githubUrl: "https://github.com/sirishaganji/network-security-audit",
-    downloadUrl: "/downloads/network-security-audit.zip",
-    coverImage: "/images/projects/network-security.png",
-    detailFile: "network-security-audit.mdx",
+    tags: ["Log Analysis", "Threat Intelligence", "Automation"],
+    tech: ["Python", "Pandas", "LLM", "Regex"],
+    githubUrl: "https://github.com/SirishaGanji/sentiment-project",
+    downloadUrl: undefined,
+    coverImage: "/images/projects/threat-log-analyzer.png",
+    detailFile: "threat-log-analyzer.mdx",
     featured: true,
   },
   {
-    id: "automated-server-deployment",
-    title: "Automated Server Deployment Pipeline",
+    id: "sentiment-analyzer-app",
+    title: "Sentiment Analyzer App",
     summary:
-      "Built automated deployment pipeline for multi-environment server provisioning using Infrastructure as Code principles.",
-    role: "Senior System Administrator",
-    dates: "2023-11-01 to 2024-01-10",
-    category: "SysAdmin",
-    tags: ["DevOps", "Automation", "Infrastructure", "CI/CD"],
-    tech: ["Ansible", "Terraform", "Docker", "Jenkins", "AWS"],
-    githubUrl: "https://github.com/sirishaganji/server-deployment-pipeline",
-    coverImage: "/images/projects/server-deployment.png",
-    detailFile: "automated-server-deployment.mdx",
-    featured: true,
-  },
-  {
-    id: "ai-security-chatbot",
-    title: "AI-Powered Security Incident Response Bot",
-    summary:
-      "Developed intelligent chatbot for automated security incident triage and response using advanced prompt engineering techniques.",
-    role: "Prompt Engineering Specialist",
-    dates: "2024-04-01 to 2024-06-15",
+      "Flask app using VADER to analyze CSV text, generate charts, and present insights with simple dashboards.",
+    role: "Python Developer",
+    dates: "2024-03-10 to 2024-04-20",
     category: "Prompt Eng",
-    tags: ["AI", "Chatbot", "Security", "Automation", "NLP"],
-    tech: ["OpenAI GPT-4", "LangChain", "Python", "FastAPI", "Redis"],
-    githubUrl: "https://github.com/sirishaganji/ai-security-chatbot",
-    downloadUrl: "/downloads/ai-security-chatbot.zip",
-    coverImage: "/images/projects/ai-chatbot.png",
-    detailFile: "ai-security-chatbot.mdx",
+    tags: ["NLP", "Visualization", "CSV"],
+    tech: ["Flask", "Python", "VADER", "Matplotlib"],
+    githubUrl: "https://github.com/SirishaGanji/sentiment-analyzer",
+    downloadUrl: undefined,
+    coverImage: "/images/projects/sentiment-analyzer.png",
+    detailFile: "sentiment-analyzer.mdx",
+    featured: true,
+  },
+  {
+    id: "ai-research-assistant",
+    title: "AI Research Assistant",
+    summary:
+      "Agent-style assistant to help research topics, summarize sources, and suggest next actions.",
+    role: "Prompt Engineer",
+    dates: "2024-06-01 to 2024-08-15",
+    category: "Prompt Eng",
+    tags: ["Agents", "Summarization", "Automation"],
+    tech: ["Python", "LangChain", "OpenAI"],
+    githubUrl: "https://github.com/SirishaGanji/ai-agent-simulator",
+    downloadUrl: undefined,
+    coverImage: "/images/projects/ai-research-assistant.png",
+    detailFile: "ai-research-assistant.mdx",
     featured: true,
   },
 ]
@@ -342,6 +343,34 @@ export default function HomePage() {
                             <div>
                               <div className="font-medium">Prompt Engineer</div>
                               <div className="text-xs text-gray-500">AI integration & automation</div>
+                            </div>
+                          </a>
+                          <a
+                            href="/resume/portfolio.pdf"
+                            target="_blank"
+                            rel="noreferrer"
+                            className="flex items-center px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-indigo-600 transition-colors"
+                            role="menuitem"
+                            onClick={() => setIsResumeDropdownOpen(false)}
+                          >
+                            <div className="flex items-center justify-center w-8 h-8 bg-indigo-100 rounded-full mr-3">
+                              <svg
+                                className="w-4 h-4 text-indigo-600"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                              >
+                                <path
+                                  strokeLinecap="round"
+                                  strokeLinejoin="round"
+                                  strokeWidth={2}
+                                  d="M12 4v12m0 0l-4-4m4 4l4-4M6 20h12a2 2 0 002-2V8l-6-6H6a2 2 0 00-2 2v14a2 2 0 002 2z"
+                                />
+                              </svg>
+                            </div>
+                            <div>
+                              <div className="font-medium">All‑in‑One Portfolio</div>
+                              <div className="text-xs text-gray-500">One‑page overview (PDF)</div>
                             </div>
                           </a>
                         </div>

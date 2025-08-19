@@ -1,0 +1,29 @@
+---
+title: "Threat Log Analyzer (AI-Powered Tagging)"
+date: "2024-09-15"
+role: "Cybersecurity Engineer"
+category: "Cybersecurity"
+tech: ["Python", "OpenAI", "Pandas", "Regex"]
+github: "https://github.com/SirishaGanji/ai-agent-simulator"
+summary: "Parses security logs and classifies incidents by severity and likely root cause using AI tagging."
+---
+
+## Overview
+This tool ingests raw security logs (CSV / JSON / plain text), normalizes fields, and uses AI-powered tagging to label each record by **severity**, **category** (e.g., auth, network, endpoint), and **likely root cause**.
+
+## Key Features
+- Automated parsing (Regex + Pandas) for mixed log formats  
+- AI tagging (LLM prompts) for **severity** and **category**  
+- Export to CSV with tags & confidence  
+- Filters for time range, host, user, category  
+
+## How it Works
+1. **Normalize**: Clean and structure logs (timestamps, hosts, users, IPs).  
+2. **Tag**: Send compact context chunks to the model for severity/root-cause tags.  
+3. **Review**: Output includes confidence scores and rationales.
+
+## Results
+Reduces manual triage time by ~60% in small SOC workflows.
+
+## Links
+- **GitHub**: https://github.com/SirishaGanji/ai-agent-simulator
