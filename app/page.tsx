@@ -144,7 +144,7 @@ export default function HomePage() {
     "Hi Sirisha, I would like to schedule a 15-minute call to discuss...";
   const mailtoHref = `mailto:sirishaganji@gmail.com?subject=${encodeURIComponent(
     emailSubject
-  )}&amp;body=${encodeURIComponent(emailBody)}`;
+  )}&body=${encodeURIComponent(emailBody)}`;
 
   return (
     <div className="min-h-screen bg-white">
