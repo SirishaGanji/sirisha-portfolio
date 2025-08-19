@@ -1,0 +1,47 @@
+[
+  {
+    "id": "senior-cybersecurity-analyst",
+    "title": "Senior Cybersecurity Analyst",
+    "company": "TechSecure Solutions",
+    "location": "San Francisco, CA",
+    "startDate": "2023-01-01",
+    "endDate": null,
+    "current": true,
+    "description": "Lead cybersecurity initiatives including threat detection, incident response, and security architecture design. Manage enterprise security tools and conduct regular security assessments.",
+    "achievements": [
+      "Reduced security incidents by 40% through proactive threat hunting",
+      "Implemented zero-trust architecture for 500+ employee organization",
+      "Led incident response team during critical security breaches"
+    ]
+  },
+  {
+    "id": "system-administrator",
+    "title": "System Administrator",
+    "company": "CloudTech Infrastructure",
+    "location": "Austin, TX",
+    "startDate": "2021-06-01",
+    "endDate": "2022-12-31",
+    "current": false,
+    "description": "Managed hybrid cloud infrastructure supporting 200+ servers across AWS and on-premises environments. Automated deployment processes and maintained 99.9% uptime.",
+    "achievements": [
+      "Automated 80% of routine maintenance tasks using Ansible",
+      "Migrated legacy systems to cloud infrastructure with zero downtime",
+      "Established disaster recovery procedures reducing RTO by 60%"
+    ]
+  },
+  {
+    "id": "junior-it-specialist",
+    "title": "Junior IT Specialist",
+    "company": "StartupTech Inc.",
+    "location": "Denver, CO",
+    "startDate": "2020-01-01",
+    "endDate": "2021-05-31",
+    "current": false,
+    "description": "Provided technical support and maintained IT infrastructure for growing startup. Gained experience in network administration, user support, and system troubleshooting.",
+    "achievements": [
+      "Implemented help desk ticketing system improving response time by 50%",
+      "Set up monitoring systems for network and server health",
+      "Trained 50+ employees on security best practices"
+    ]
+  }
+]

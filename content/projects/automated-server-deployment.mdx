@@ -1,0 +1,46 @@
+---
+title: "Automated Server Deployment Pipeline"
+description: "Infrastructure as Code deployment pipeline for multi-environment server provisioning"
+date: "2024-01-10"
+author: "Sirisha Ganji"
+tags: ["DevOps", "Automation", "Infrastructure", "CI/CD"]
+repo: "https://github.com/sirishaganji/server-deployment-pipeline"
+---
+
+# Automated Server Deployment Pipeline
+
+## Project Overview
+
+Designed and implemented a fully automated server deployment pipeline that reduced deployment time from hours to minutes while ensuring consistency across development, staging, and production environments.
+
+## Architecture
+
+### Infrastructure as Code
+- **Terraform** for infrastructure provisioning
+- **Ansible** for configuration management
+- **Docker** for application containerization
+- **Jenkins** for CI/CD orchestration
+
+### Multi-Environment Strategy
+\`\`\`
+Development → Staging → Production
+     ↓           ↓          ↓
+   Auto Deploy  Manual    Manual
+               Approval   Approval
+\`\`\`
+
+## Implementation Details
+
+### 1. Infrastructure Provisioning
+```hcl
+# Terraform configuration for AWS EC2 instances
+resource "aws_instance" "web_server" {
+  count         = var.instance_count
+  ami           = var.ami_id
+  instance_type = var.instance_type
+  
+  tags = {
+    Name        = "web-server-${count.index + 1}"
+    Environment = var.environment
+  }
+}
